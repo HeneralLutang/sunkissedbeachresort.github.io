@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/v4-shims.min.js" integrity="sha512-wClfKJfh+9jD9QuJjurS6L5kPvT1vojiGkd2BjQ0aPL6ptsnoNNvCmNwrISYeIoaxKfOmbnI8ti3d/WjKztymQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/solid.min.js" integrity="sha512-F0Gp9qi8/3qyo+62Pi1ZgGe6hAUxPbzOnqhhpJYAMUGDmOys95dCRCVYfQawlUeoGp1Rj/K9V7NboA9sQ9BtKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/regular.min.js" integrity="sha512-H1PxHAj13z6ipNSlyM5ftUSOSvQXeH0eOsPjEpSOcjSROPLIxhKB0PLGSAbFDqEqe2vd2xPkUnEfVtBS/RNlmw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/fontawesome.min.js" integrity="sha512-nKvEIGRKw2OQCR34yLfnWnvrOBxidLG9aK+vzsBxCZ/9ZxgcS4FrYcN+auWUTkCitTVZAt82InDKJ7x+QtKu6g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/conflict-detection.min.js" integrity="sha512-58PZ2FlYRr1lsJq9mPeR9Dxh0ZU7FECn0YOhXApeGE8HPslFu+mWdwEpQu26Itx4dmaGAuT7A6Cg4tgC5v/eJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/brands.min.js" integrity="sha512-rbApvPERCHI8cOpTOKfMLVJNlXSCs4QRu8UsJ0HieeHyNKkHtUIQTZq3hv0pT7X0SUsLrRGEUsMTTpzwpdeIuw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/regular.min.css" integrity="sha512-k2UAKyvfA7Xd/6FrOv5SG4Qr9h4p2oaeshXF99WO3zIpCsgTJ3YZELDK0gHdlJE5ls+Mbd5HL50b458z3meB/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css" integrity="sha512-6mc0R607di/biCutMUtU9K7NtNewiGQzrvWX4bWTeqmljZdJrwYvKJtnhgR+Ryvj+NRJ8+NnnCM/biGqMe/iRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>SunKissed Beach Resort</title>
+    <link rel = "icon" href="../images/loggo.png" type = "image/png">
+</head>
+<body>
+    
+    <header>
+        <div class="content flex_space">
+            <div class="logo">
+                <img src="../images/sunlogo.png" alt="logo">
+            </div>
+            <div class="navlinks">
+                <ul id="menulist">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Cottages</a></li>
+                    <li><a href="">Pages</a></li>
+                    <li><a href="">Contacts</a></li>
+                    <li> <i class="fa fa-search"></i></li>
+                    <li> <button class="primary-btn">BOOK NOW</button> </li>
+                </ul>
+                <span class="fa fa-bars" onclick="menutoggle()"></span>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        var menulist = document.getElementById('menulist');
+        menulist.style.maxHeight ="0px";
+
+        function menutoggle(){
+            if(menulist.style.maxHeight == "0px"){
+               menulist.style.maxHeight ="100vh";
+            } else{
+                menulist.style.maxHeight ="0px";
+            }
+        }
+    </script> 
+
+    <section class="home">
+        <div class="content">
+            <div class="owl-carousel owl-theme">
+                <div class="item"> 
+                    <img src="../images/banner1.jpg" alt="banner" >
+                    <div class="text">
+                        <h1>Spend Your Holiday</h1>
+                        <p>Create your Memories <br> At Sunkissed Beach Resort</p>
+                        <div class="flex">
+                            <button class="primary-btn">READ MORE</button>
+                            <button class="secondary-btn">CONTACT US</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"> 
+                    <img src="../images/banner4.jpg" alt="banner">
+                    <div class="text">
+                        <h1>Spend Your Holiday</h1>
+                        <p>Enjoy Your Holiday<br> with your love ones</p>
+                        <div class="flex">
+                            <button class="primary-btn">READ MORE</button>
+                            <button class="secondary-btn">CONTACT US</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"> 
+                    <img src="../images/banner3.jpg" alt="banner">
+                    <div class="text">
+                        <h1>Spend Your Holiday</h1>
+                        <p>Unleash your Spirit of Adventure <br> And Explore Rock Formations</p>
+                        <div class="flex">
+                            <button class="primary-btn">READ MORE</button>
+                            <button class="secondary-btn">CONTACT US</button>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:true,
+    dots:false,
+    navText:["<i class = 'fa fa-chevron-left'></i>","<i class = 'fa fa-chevron-right'></i>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+    </script>
+
+
+
+    <section class="book">
+        <div class="container flex_space">
+            <div class="text">
+                <h1><span>Book</span> Your Rooms</h1>
+            </div>
+            <div class="form">
+                <form class="grid">
+                    <input type="date" placeholder="Arrival Date" >
+                    <input type="date" placeholder="Departure Date" >
+                    <input type="number" placeholder="Adults" >
+                    <input type="number" placeholder="Children" >
+                    <input type="submit" value="CHECK AVAILABILITY" >
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="about top">
+        <div class="container flex">
+            <div class="left">
+                <div class="heading">
+                    <h1>WELCOME</h1>
+                    <h2>SunKissed Beach Resort</h2>
+                </div>
+                <p>You may unwind and let all of your troubles and concerns go here at SunKissed Beach Resort.
+                    <br>
+                    Where can you unwind and spend time with friends and family.
+                    <br>
+                    The SunKissed Beach Resort offers wonderful Adventures and Experiences.</p>
+                <button class="primary-btn">ABOUT US</button>
+            </div>
+            <div class="right">
+                <img src="../images/welcome.jpg" >
+        </div>
+    </section>
+
+    <section class="rooms">
+        <div class="container top">
+            <div class="heading">
+                <h1>Explore</h1>
+                <h2>Our Cottages</h2>
+                <p>Be at ease and stress-free.    
+                </p>
+            </div>
+            <div class="content mtop">
+                <div class="owl-carousel owl-carousel1 owl-theme">
+                    <div class="items">
+                        <div class="image">
+                            <img src="../images/cottage1.jpg" >
+                        </div>
+                        <div class="text">
+                            <h2>Standard Cottages</h2>
+                            <div class="rate flex">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>Spend you Day and Enjoy Beautiful View
+                            </p>
+                            <div class="button flex">
+                                <button class="primary-btn">BOOK NOW</button>
+                                <h3>PhP600<span> <br> Per Day </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="../images/banner4.jpg" >
+                        </div>
+                        <div class="text">
+                            <h2>Standard Cottages</h2>
+                            <div class="rate flex">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>Stress-free and Wonderful View 
+                            </p>
+                            <div class="button flex">
+                                <button class="primary-btn">BOOK NOW</button>
+                                <h3>PhP600<span> <br> Per Day </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content mtop">
+                <div class="owl-carousel owl-carousel1 owl-theme">
+                    <div class="items">
+                        <div class="image">
+                            <img src="../images/dd2.jpg" >
+                        </div>
+                        <div class="text">
+                            <h2>Double Decker</h2>
+                            <div class="rate flex">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>Spend your nights and feel the romance with your love ones 
+                            </p>
+                            <div class="button flex">
+                                <button class="primary-btn">BOOK NOW</button>
+                                <h3>PhP1,500<span> <br> Per Night </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="../images/dd.jpg" >
+                        </div>
+                        <div class="text">
+                            <h2>Double Decker</h2>
+                            <div class="rate flex">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>Enjoy your night with friends and family
+                            </p>
+                            <div class="button flex">
+                                <button class="primary-btn">BOOK NOW</button>
+                                <h3>PhP1,500<span> <br> Per Night </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:40,
+    nav:true,
+    dots:false,
+    navText:["<i class = 'fa fa-chevron-left'></i>","<i class = 'fa fa-chevron-right'></i>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:1,
+            margin: 10,
+        },
+        1000:{
+            items:1
+        }
+    }
+                                        })
+    </script>
+
+<section class="accomodations">
+    <div class="container top">
+        <div class="heading">
+            <h2>Accomodiations</h2>
+            <p>Things you can do.
+                <br> While at SunKissed    
+            </p>
+        </div>
+        <div class="content mtop">
+            <div class="owl-carousel owl-carousel1 owl-theme">
+                <div class="items">
+                    <div class="image">
+                        <img src="../images/functionhall.jpg" >
+                    </div>
+                    <div class="text">
+                        <h2>Function Hall</h2>
+                        <div class="rate flex">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>Where you can do Seminars <br>
+                            And Birthday Party
+                        </p>
+                        <div class="button flex">
+                            <button class="primary-btn">BOOK NOW</button>
+                            <h3>PhP1,500<span> <br> Per Day </span> </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="image">
+                        <img src="../images/fc2.jpg" >
+                    </div>
+                    <div class="text">
+                        <h2>Function Hall</h2>
+                        <div class="rate flex">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>Celebrate with your Family 
+                        </p>
+                        <div class="button flex">
+                            <button class="primary-btn">BOOK NOW</button>
+                            <h3>PhP1,500<span> <br> Per Day </span> </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content mtop">
+            <div class="owl-carousel owl-carousel1 owl-theme">
+                <div class="items">
+                    <div class="image">
+                        <img src="../images/boat.jpg" >
+                    </div>
+                    <div class="text">
+                        <h2>Boats</h2>
+                        <div class="rate flex">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>Seek for Adventure 
+                        </p>
+                        <div class="button flex">
+                            <button class="primary-btn">BOOK NOW</button>
+                            <h3>Php300<span> <br> Per Day </span> </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="image">
+                        <img src="../images/balsa.jpg" width="100%" height="1300px">
+                    </div>
+                    <div class="text">
+                        <h2>Balsa</h2>
+                        <div class="rate flex">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>Be Aadventurous!
+                        </p>
+                        <div class="button flex">
+                            <button class="primary-btn">BOOK NOW</button>
+                            <h3>PhP300<span> <br> Per Day </span> </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    $('.owl-carousel').owlCarousel({
+loop:true,
+margin:40,
+nav:true,
+dots:false,
+navText:["<i class = 'fa fa-chevron-left'></i>","<i class = 'fa fa-chevron-right'></i>"],
+responsive:{
+    0:{
+        items:1
+    },
+    768:{
+        items:1,
+        margin: 10,
+    },
+    1000:{
+        items:1
+    }
+}
+                                    })
+</script>
+
+    <section class="gallery">
+        <div class="container top">
+            <div class="heading">
+                <h1>PHOTOS</h1>
+                <h2>Our Gallery</h2>
+                <p>A sneek peek to our Wonderful Beach </p>
+            </div>
+
+            <div class="content top">
+                <div class="owl-carousel owl-carousel1 owl-theme">
+                    <div class="items">
+                        <div class="img">
+                            <img src="../images/banner1.jpg" alt="">
+                        </div>
+                        <div class="overlay">
+                            <span class="fa fa-plus"></span>
+                            <h3>Photo Title Here.</h3>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="img">
+                            <img src="../images/banner2.jpg" alt="">
+                        </div>
+                        <div class="overlay">
+                            <span class="fa fa-plus"></span>
+                            <h3>Photo Title Here.</h3>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="img">
+                            <img src="../images/banner3.jpg" alt="">
+                        </div>
+                        <div class="overlay">
+                            <span class="fa fa-plus"></span>
+                            <h3>Photo Title Here.</h3>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="img">
+                            <img src="../images/banner4.jpg" alt="">
+                        </div>
+                        <div class="overlay">
+                            <span class="fa fa-plus"></span>
+                            <h3>Photo Title Here.</h3>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="img">
+                            <img src="../images/cottage1.jpg" alt="">
+                        </div>
+                        <div class="overlay">
+                            <span class="fa fa-plus"></span>
+                            <h3>Photo Title Here.</h3>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:true,
+    dots:false,
+    autoplay:true,
+    autplayTimeout:1000,
+    autoplayHoverPause: true,
+    navText:["<i class = 'fa fa-chevron-left'></i>","<i class = 'fa fa-chevron-right'></i>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:4,
+            margin: 10,
+        },
+        1000:{
+            items:6
+        }
+    }
+                                        })
+    </script>
+    
+    <section class="services top">
+        <div class="container">
+            <div class="heading">
+                <h1>SERVICES</h1>
+                <h2>Our Services</h2>
+                <p>Things you can do while at SunKissed Beach Resort</p>
+            </div>
+
+            <div class="content flex_space">
+                <div class="left grid2">
+                    <div class="box">
+                        <div class="text">
+                            <i class="fa-solid fa-sailboat"></i>
+                            <h3>Boating</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <i class="fa-solid fa-music"></i>
+                            <h3>Karaoke</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <i class="fa-solid fa-binoculars"></i>
+                            <h3>Site Seeing</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <i class="fa-brands fa-pagelines"></i>
+                            <h3>Garden</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="../images/banner3.jpg" alt="" >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container grid">
+            <div class="box">
+                <img src="../images/logo.png" alt="" >
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus at urna condimentum mattis pellentesque id. Risus viverra adipiscing at in tellus integer feugiat. Nulla malesuada pellentesque elit eget gravida. Diam vulputate ut pharetra sit. Ullamcorper morbi tincidunt ornare massa eget egestas. Fames ac turpis egestas integer eget aliquet nibh praesent tristique. Non blandit massa enim nec. Fermentum et sollicitudin ac orci. Sem fringilla ut morbi tincidunt augue interdum velit euismod. Urna et pharetra pharetra massa. Enim praesent elementum facilisis leo vel fringilla est ullamcorper eget. Pharetra diam sit amet nisl. Viverra aliquet eget sit amet. Aliquam vestibulum morbi blandit cursus risus at. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer. Quis varius quam quisque id. Aliquam faucibus purus in massa tempor nec feugiat nisl. Fusce id velit ut tortor pretium. Malesuada fames ac turpis egestas maecenas pharetra convallis./p>
+
+                <div class="icon">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-phone"></i>
+                    <i class="fa fa-envelope"></i>
+                </div>
+            </div>
+
+            
+
+            <div class="box">
+                <h2>Contact Us</h2>
+                <p>sfah sfks afhisa fihsa fas sf </p>
+                <i class="fa fa-location-dot"></i>
+                <label>Barrangay Veloso, Marbut, Samar</label><br><br>
+                <i class="fa fa-phone"></i>
+                <label>09474239466</label><br><br>
+                <i class="fa fa-facebook"></i>
+                <label> @SunKissed Beach Resort</label><br><br>
+                <i class="fa fa-envelope"></i>
+                <label> sunkissedbeach@gmail.com</label>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="legal">
+        <p class="container">Copyright (c) 2023 Copyright Holder All Rights Reserved.</p>
+    </div>
+
+</body>
+</html>
